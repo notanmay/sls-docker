@@ -1,0 +1,13 @@
+service: sls-docker
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  ecr:
+    images:
+      appimage:
+        path: ./
+
+functions:
+  hello:
+    handler: app.handler
