@@ -10,4 +10,4 @@ provider:
 
 functions:
   hello:
-    handler: app.handler
+    handler: src/serverless/app.handler

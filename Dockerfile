@@ -4,4 +4,6 @@ COPY . .
 
 RUN yarn install
 
-CMD echo 'Hello World!'
+WORKDIR ./src/express
+
+CMD ["node", "app.js"]
